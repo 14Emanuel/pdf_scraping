@@ -1,40 +1,48 @@
-Open SQL Chatbot: Chinook Database
-Overview
-This project features a chatbot designed to interact with the Chinook database, a sample music store database. It enables users to query and retrieve information using SQL.
+PDF Data Scraping and Summarization Project
+Project Overview
+This project involves extracting data from PDF documents using Python scripts, utilizing Natural Language Processing (NLP) models to summarize the extracted data into structured and concise text, and connecting the project to a PostgreSQL database to store the summarized data in tabular form.
 
-Project Files
-Chinook_Sqlite.sql: SQL script for creating the Chinook database schema.
-Chinook_Sqlite.sqlite: SQLite database containing the Chinook data.
-Notebook.ipynb: Jupyter notebook demonstrating chatbot usage.
-ui.py: Python script for the chatbot's user interface.
-README.md: This readme file.
-Installation
-Install necessary Python packages:
+Key Components
+PDF Data Scraping
 
-bash
-Copy code
-pip install langchain
-pip install openai
-Set up your OpenAI API key as an environment variable:
+Python scripts are used to scrape data from PDF documents, extracting relevant information.
+NLP Summarization
 
-bash
-Copy code
-export OPENAI_API_KEY="your_api_key_here"
-Alternatively, set the API key in the Jupyter notebook or Python script:
+NLP models are employed to summarize the extracted data into concise and structured text that can be readily stored within database tables.
+PostgreSQL Database
 
-python
-Copy code
-import os
-os.environ["OPENAI_API_KEY"] = "your_api_key_here"
-Usage
-This chatbot allows SQL-based interaction with the Chinook database. Refer to the provided Jupyter notebook (Notebook.ipynb) and run the ui.py script for the user interface.
+PostgreSQL is used as the database management system to store the summarized data in organized tables.
+Project Workflow
+Python scripts extract data from PDF documents, capturing the necessary information.
 
-Getting Started
-Complete the installation steps.
+Extracted data is processed and summarized using NLP models, creating structured text summaries.
 
-Access the Jupyter notebook (Notebook.ipynb) for examples and guidance.
+The summarized data is stored within PostgreSQL database tables.
 
-Run the ui.py script to utilize the chatbot's interface for SQL queries and database responses.
+Technology Stack
+Data Extraction:
+
+Python (PDF parsing libraries)
+NLP Summarization:
+
+NLP models (e.g., spaCy, GPT-3, BERT)
+Database:
+
+PostgreSQL
+Project Setup
+To set up and run this project:
+
+Ensure Python and the required libraries for PDF parsing and NLP are installed.
+
+Set up a PostgreSQL database and configure database connection settings in your Python script.
+
+Implement PDF scraping scripts to extract data from PDF documents.
+
+Utilize NLP models to summarize the extracted data.
+
+Establish a connection to the PostgreSQL database and create appropriate tables for data storage.
+
+Run your project to automate the data extraction, summarization, and storage process.
 
 Conclusion
-The chatbot simplifies Chinook database exploration via SQL queries. Customize and extend it to suit your needs. Refer to the provided resources for usage guidance.
+This project combines data extraction from PDFs, NLP-based summarization, and PostgreSQL database integration to efficiently capture and store structured information. It offers a streamlined solution for handling large volumes of PDF data and converting it into organized, manageable text.
